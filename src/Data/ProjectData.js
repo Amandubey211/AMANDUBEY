@@ -1,0 +1,152 @@
+import BakeNCake from "../Images/Projects/bake-n-cake thumbnail.png";
+import AmanV3 from "../Images/Projects/AmanV3.png";
+import AmanV2 from "../Images/Projects/AmanV2.png";
+import AmanV1 from "../Images/Projects/AmanV1.png";
+import Dashboard from "../Images/Projects/Dashboard.png";
+import Aistudios from "../Images/Projects/AiStudio.png";
+import ChatApp from "../Images/Projects/ChatApp.png";
+import soundWizard from "../Images/Projects/soundWizard.png";
+import NetflixGPT from "../Images/Projects/NetFlixGPT.png";
+import BrainGames from "../Images/Projects/BrainGames.png";
+import JokeJive from "../Images/Projects/JokeJive.png";
+const ProjectData = [
+  {
+    title: "Joke-Jive",
+    projectImg: JokeJive,
+    type: "react",
+    link: "https://jokejive.onrender.com",
+    tech: "React",
+    date: "jan 12 ",
+    tech1: "React",
+    tech2: "Redux",
+    tech3: "tailwind",
+    tech4: "Infinite-scroll",
+    tech5: "Chakra Ui",
+  },
+  {
+    title: "NetflixGPT",
+    projectImg: NetflixGPT,
+    type: "react",
+    link: "https://netflixgpt001.firebaseapp.com/",
+    tech: "React",
+    date: "jan 12 ",
+    tech1: "React",
+    tech2: "Redux",
+    tech3: "tailwind",
+    tech4: "firebase",
+    tech5: "Chakra Ui",
+  },
+
+  {
+    title: "Brain-Games",
+    projectImg: BrainGames,
+    type: "react",
+    link: "https://brain-games-0qj6.onrender.com/",
+    tech: "React",
+    date: "dec-12 ",
+    tech1: "React",
+    tech2: "Chakra Ui",
+    tech3: "Context APIs",
+  },
+  {
+    title: "Sound Wizard",
+    projectImg: soundWizard,
+    type: "react",
+    link: "https://soundwizard.onrender.com/",
+    tech: "React",
+    date: "nov 11 ",
+    tech1: "React",
+    tech2: "screen Reader",
+    tech3: "Speech recogination",
+  },
+
+  {
+    title: "Chat App",
+    projectImg: ChatApp,
+    type: "mern",
+    link: "https://butterfly-w0aw.onrender.com",
+    tech: "Mern",
+    date: "oct 23",
+    tech1: "MERN",
+    tech2: "Socket.io",
+    tech3: "NodeMailer",
+    tech4: "Chakra Ui",
+  },
+  {
+    title: "Ai Generator",
+    projectImg: Aistudios,
+    type: "react",
+    link: "https://aistudio.onrender.com/",
+    views: "56",
+    tech: "React/purecss",
+    date: "Aug 23",
+    tech1: "React",
+    tech2: "Chakra Ui",
+    tech3: "Open Ai Apis",
+  },
+  {
+    title: "Dashboard",
+    projectImg: Dashboard,
+    type: "react",
+    link: "https://reactdashboard-ddew.onrender.com/",
+    views: "89",
+    tech: "React/bootstrap",
+    date: "june 23",
+    tech1: "react",
+    tech2: "Bootstrap",
+    tech3: "Dummy Json",
+  },
+
+  {
+    title: "Portfolio",
+    projectImg: AmanV3,
+    type: "mern",
+    link: "/",
+    views: "21",
+    tech: "MERN",
+    date: "Aug 23",
+    tech1: "React",
+    tech2: "Chakra Ui",
+    tech3: "node js",
+    tech4: "express",
+    tech5: "mongoDB",
+  },
+  {
+    title: "Bake-N-Cake",
+    projectImg: BakeNCake,
+    type: "mern",
+    link: "https://cake-n-bake2.onrender.com/",
+    views: "21",
+    tech: "MERN",
+    date: "jan 23",
+    tech1: "MERN",
+    tech2: "JWT",
+    tech3: "Chakra UI",
+    tech4: "Payment Gateway",
+    tech5: "Context",
+  },
+  {
+    title: "pratice-2",
+    projectImg: AmanV2,
+    type: "react",
+    link: "https://amandubeyprofile.netlify.app/",
+    views: "21",
+    tech: "React",
+    date: "sept 22",
+    tech1: "bootstrap",
+    tech2: "React",
+    tech3: "npms",
+  },
+  {
+    title: "portfolio",
+    projectImg: AmanV1,
+    type: "react",
+    link: "https://amandubey211.github.io/Aman211-portfolio/about.html",
+    date: " Aug 22",
+    tech1: " html",
+    tech2: "css",
+    tech3: "js",
+  },
+];
+
+export default ProjectData;
