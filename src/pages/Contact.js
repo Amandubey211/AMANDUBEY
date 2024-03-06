@@ -42,10 +42,10 @@ const Contact = () => {
                   <hr />
 
                   <div className="d-flex flex-row  gap-1 justify-content-center ">
-                    <span className="fw-bold "> +91 77333 42037</span>
+                    <span className="fw-semibold "> +91 77000 42037</span>
                   </div>
                   <div className="d-flex flex-row  gap-1 justify-content-center ">
-                    <span className="fw-bold "> +91 77000 42334*</span>
+                    <span className="fw-semibold "> +91 66666 99999</span>
                   </div>
                 </div>
               </div>
@@ -66,10 +66,10 @@ const Contact = () => {
                   <hr />
 
                   <div className="d-flex flex-row  gap-1 justify-content-center ">
-                    <span className="fw-bold "> amandubey8833@gmail.com</span>
+                    <span className="fw-semibold "> amandubey8833@gmail.com</span>
                   </div>
                   <div className="d-flex flex-row  gap-1 justify-content-center ">
-                    <span className="fw-bold "> amanheller8833@gmail.com</span>
+                    <span className="fw-semibold "> amanheller8833@gmail.com</span>
                   </div>
                 </div>
               </div>
