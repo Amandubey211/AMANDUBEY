@@ -1,0 +1,22 @@
+
+
+.Navigation{
+    transition: .2s ease-out;
+}
+
+.Navigation:hover {
+  color: rgb(40, 40, 134);
+  background-color: rgb(160, 198, 235);
+  border-radius: 4px;
+  
+}
+.resume{
+    color: blue;
+}
+
+.active{
+  color: rgb(40, 40, 134);
+  background-color: rgb(160, 198, 235);
+  border-radius: 4px;
+
+}
