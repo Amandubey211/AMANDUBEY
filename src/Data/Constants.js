@@ -6,7 +6,7 @@ import client6 from "../Images/Clients/logo6.png";
 import { BsCodeSlash } from "react-icons/bs";
 
 export const Objective =
-  " A motivated and passionate React developer with a React certification and two years building dynamic and interactiveweb pages using React, Node.js, Express, MongoDB . Looking foran opportunity to and contribute to their innovative projects.";
+  "Front-End Developer  mastery of React and a strong understanding of the MERN Stack. Proficient in advanced React concepts like hooks,routing, complex state-management, Redux, Rendering-cycle along with good understanding of  LLD and HLD. Specialized in SEO, security, and performance optimization, including asset optimization, lazy loading, and network optimization. A practitioner of best practices—implementing custom hooks, ensuring code modularity, readability, and reusability. Proficient in testing (unit and integration), Git, deployment, and skilled in navigating the entire development lifecycle, from scratch to production scaling.";
 
 export const ClientsImage = [client1, client2, client5, client6];
 

@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ProfileComponent from "../components/ProfileComponent";
-import { FaCss3Alt, FaReact, FaCameraRetro } from "react-icons/fa";
+import { FaCss3Alt, FaReact } from "react-icons/fa";
+import { GrOptimize } from "react-icons/gr";
 import { BiLogoMongodb } from "react-icons/bi";
 import { BsCodeSlash, BsDashLg } from "react-icons/bs";
-import { TbTestPipe } from "react-icons/tb";
+import { IoLogoNodejs } from "react-icons/io5";
 import { ClientsImage, Objective } from "../Data/Constants";
 import WhatIDoComponent from "../components/WhatIDo";
 
@@ -19,7 +20,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="col-lg-8 col-md-8 col-sm-12  pt-2 ps-4 ms-3 rounded-4 px-5"
+            className="col-lg-8 col-md-8 col-sm-12  ps-4 ms-3 rounded-4 px-5"
             style={{
               boxShadow:
                 "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
@@ -27,15 +28,17 @@ const Home = () => {
           >
             {" "}
             <div className=" container-fluid d-flex    flex-column flex-wrap p-3">
-              <div className=" py-2 rounded-3 d-flex gap-2 align-items-center">
+              <div className=" py-1 rounded-3 d-flex gap-2 align-items-center">
                 <h4> About Me</h4> <BsDashLg />
               </div>
               <div className="ps-2">
-                <p className="fw-semibold">{Objective}</p>
+                <p className="fw-semibold" style={{ fontSize: "12px" }}>
+                  {Objective}
+                </p>
               </div>
             </div>
-            <div className="what_i_do  mt-2 px-2     ">
-              <h4 className="py-2 ">What I Do!</h4>
+            <div className="what_i_do  px-2     ">
+              <h4>What I Do!</h4>
 
               <div className=" Whatido d-flex flex-column js   flex-xl-row   flex-md-row  flex-lg-row   gap-2">
                 <div
@@ -62,7 +65,7 @@ const Home = () => {
                 >
                   <WhatIDoComponent
                     logo={<FaReact />}
-                    title="Front-End Dev"
+                    title="REACT"
                     description="Designing and building the user interface and user experience of websites and web applications using code."
                   />
                 </div>
@@ -78,7 +81,7 @@ const Home = () => {
                 >
                   <WhatIDoComponent
                     logo={<FaCss3Alt />}
-                    title="ui/ux"
+                    title="UI/UX"
                     description="UI (User Interface): Designing the visual layout and elements of a digital product for user interaction."
                   />
                 </div>
@@ -92,7 +95,7 @@ const Home = () => {
                 >
                   <WhatIDoComponent
                     logo={<BiLogoMongodb />}
-                    title="Mongo db"
+                    title="Mongo-DB"
                     description="NoSQL database for storing, retrieving, and managing unstructured or semi-structured data, widely used in web development."
                   />
                 </div>
@@ -107,9 +110,9 @@ const Home = () => {
                   }}
                 >
                   <WhatIDoComponent
-                    logo={<FaCameraRetro />}
-                    title="Photo-Graphy"
-                    description="Capturing moments and scenes using cameras, composing visuals, and manipulating light to create compelling images."
+                    logo={<GrOptimize />}
+                    title="SEO"
+                    description=" excel in optimizing websites for search engines, leveraging techniques like keyword analysis, on-page and off-page optimization, and link building."
                   />
                 </div>
                 <div
@@ -121,9 +124,9 @@ const Home = () => {
                   }}
                 >
                   <WhatIDoComponent
-                    logo={<TbTestPipe />}
-                    title="streching"
-                    description="orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat."
+                    logo={<IoLogoNodejs />}
+                    title="Node JS"
+                    description="We have extensive experience with Node.js, having successfully developed and deployed multiple projects, showcasing our proficiency in this technology"
                   />
                 </div>
               </div>
@@ -145,7 +148,7 @@ const Home = () => {
                         className="clients_img"
                         src={data}
                         style={{ width: "80px" }}
-                        alt="client 1"
+                        alt={`client${index + 1}`}
                       />
                     </div>
                   );

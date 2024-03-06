@@ -19,6 +19,7 @@ const ProfileComponent = ({ HOME }) => {
           <div className="profile_img pb-2 d-flex  justify-content-center flex-center ">
             <img
               loading="eager"
+              
               className="Image rounded-4"
               style={{
                 boxShadow:
@@ -42,7 +43,7 @@ const ProfileComponent = ({ HOME }) => {
               <NavLink
                 target="_blank"
                 className="text-decoration-none text-reset  "
-                to="https://www.linkedin.com/in/aman-dubey-0bbaba236/"
+                to="https://www.linkedin.com/in/profile-amandubey/"
               >
                 <BsLinkedin
                   role="button"

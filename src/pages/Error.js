@@ -1,16 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import ErrorPage from "../Images/Error/Error.svg";
 const Error = () => {
   return (
-
-   
-      <div>
-        <h1 className="fw-bold fs-1">error 404 page</h1>
-        <NavLink to="/"> go to home </NavLink>
-
-      </div>
-  
+    <div
+      style={{
+        height: "100vh",
+      }}
+      className="d-flex gap-3   flex-column align-content-center  align-items-center justify-content-center   "
+    >
+      <img alt="Error Image" style={{ height: "350px" }} src={ErrorPage} />
+      <NavLink to="/" className="btn px-5 btn-danger">
+        {" "}
+        go to home{" "}
+      </NavLink>
+    </div>
   );
 };
 

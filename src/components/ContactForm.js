@@ -17,7 +17,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       SetLoading(true);
-      const { data } = await axios.post("/api/contact", {
+      const { data } = await axios.post("/changethis", {
         Name,
         Email,
         Message,

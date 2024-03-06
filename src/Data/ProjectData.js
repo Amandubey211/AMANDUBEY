@@ -9,7 +9,21 @@ import soundWizard from "../Images/Projects/soundWizard.png";
 import NetflixGPT from "../Images/Projects/NetFlixGPT.png";
 import BrainGames from "../Images/Projects/BrainGames.png";
 import JokeJive from "../Images/Projects/JokeJive.png";
+import Eshop from "../Images/Projects/E-shop.png";
 const ProjectData = [
+  {
+    title: "E-SHOP",
+    projectImg: Eshop,
+    type: "react",
+    link: "https://ecommerce-xn2c.onrender.com",
+    tech: "React",
+    date: "jan 25 ",
+    tech1: "React",
+    tech2: "Redux",
+    tech3: "Bootstrap",
+    tech4: "Firebase",
+    tech5: "Parcel",
+  },
   {
     title: "Joke-Jive",
     projectImg: JokeJive,
@@ -27,7 +41,7 @@ const ProjectData = [
     title: "NetflixGPT",
     projectImg: NetflixGPT,
     type: "react",
-    link: "https://netflixgpt001.firebaseapp.com/",
+    link: "https://netflixgpt-2510.onrender.com",
     tech: "React",
     date: "jan 12 ",
     tech1: "React",
