@@ -68,9 +68,9 @@ const ProjectCard = ({ data }) => {
               <p className="  mt-2 ">{title}</p>
             </div>
             <div className=" d-none   d-sm-block fw-semibold mt-1 ">
-              <div className="d-flex gap-2 align-items-center">
-                <FcCalendar className="fs-5   " />
-                <span>{date} </span>
+              <div className="d-flex gap-2 align-items-center pe-lg-4 text-uppercase">
+                <FcCalendar className="fs-6   " />
+                <span className="fs-6   ">{date} </span>
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ import { FcPhoneAndroid, FcGoogle, FcGlobe, FcCalendar } from "react-icons/fc";
 import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
 import { ImFolderDownload } from "react-icons/im";
 import { SiReplit } from "react-icons/si";
+import MyLinks from "../Data/MyLinks";
 const ProfileComponent = ({ HOME }) => {
   return (
     <div>
@@ -19,14 +20,12 @@ const ProfileComponent = ({ HOME }) => {
           <div className="profile_img pb-2 d-flex  justify-content-center flex-center ">
             <img
               loading="eager"
-              
               className="Image rounded-4"
               style={{
                 boxShadow:
                   "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
               }}
               src={owner}
-              
               alt="Aman Dubey Img"
             />
           </div>
@@ -41,48 +40,19 @@ const ProfileComponent = ({ HOME }) => {
             </div>
             <div className=" d-flex  gap-3  justify-content-center  rounded-3 ">
               {" "}
-              <NavLink
-                target="_blank"
-                className="text-decoration-none text-reset  "
-                to="https://www.linkedin.com/in/profile-amandubey/"
-              >
-                <BsLinkedin
-                  role="button"
-                  className="fs-2 rounded-2  hoverlink p-2 "
-                />{" "}
-              </NavLink>
-              <Link
-                target="_blank"
-                className="text-decoration-none text-reset"
-                to="https://www.instagram.com/aman_dubey_444/"
-              >
-                <BsInstagram
-                  role="button"
-                  className="fs-2 rounded-2 hoverlink p-2 "
-                />
-              </Link>
-              <Link
-                target="_blank"
-                className="text-decoration-none text-reset"
-                to="https://github.com/Amandubey211"
-              >
-                {" "}
-                <BsGithub
-                  role="button"
-                  className="fs-2 rounded-2 hoverlink p-2 "
-                />{" "}
-              </Link>
-              <Link
-                target="_blank"
-                className="text-decoration-none text-reset"
-                to="https://replit.com/@TYIT211-DUBEYAM"
-              >
-                {" "}
-                <SiReplit
-                  role="button"
-                  className="fs-2 rounded-2 hoverlink p-2 "
-                />{" "}
-              </Link>
+              {MyLinks.map((data) => {
+                return (
+                  <Link
+                    title={data.role}
+                    key={data.id}
+                    target="_blank"
+                    className="text-decoration-none text-reset"
+                    to={data.url}
+                  >
+                    {data.logo}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>

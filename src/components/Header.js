@@ -61,21 +61,20 @@ function Header() {
                 <Nav.Link>
                   <NavLink
                     className="text-decoration-none text-reset  py-2"
-                    to="/contact"
-                  >
-                    <span className="fs-6  fw-bold Navigation px-3 py-2  ">
-                      contact{" "}
-                    </span>
-                  </NavLink>
-                </Nav.Link>
-
-                <Nav.Link>
-                  <NavLink
-                    className="text-decoration-none text-reset  py-2"
                     to="/blog"
                   >
                     <span className="fs-6  fw-bold Navigation px-3 py-2 ">
                       Blog{" "}
+                    </span>
+                  </NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                  <NavLink
+                    className="text-decoration-none text-reset  py-2"
+                    to="/contact"
+                  >
+                    <span className="fs-6  fw-bold Navigation px-3 py-2  ">
+                      contact{" "}
                     </span>
                   </NavLink>
                 </Nav.Link>

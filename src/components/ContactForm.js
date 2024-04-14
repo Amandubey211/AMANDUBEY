@@ -17,11 +17,14 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       SetLoading(true);
-      const { data } = await axios.post("/changethis", {
-        Name,
-        Email,
-        Message,
-      });
+      const { data } = await axios.post(
+        "https://amandubey-backend.onrender.com/api/contact",
+        {
+          Name,
+          Email,
+          Message,
+        }
+      );
       if (data) {
         toast.success(data.message);
         SetLoading(false);

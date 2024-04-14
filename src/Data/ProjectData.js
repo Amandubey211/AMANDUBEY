@@ -10,7 +10,21 @@ import NetflixGPT from "../Images/Projects/NetFlixGPT.png";
 import BrainGames from "../Images/Projects/BrainGames.png";
 import JokeJive from "../Images/Projects/JokeJive.png";
 import Eshop from "../Images/Projects/E-shop.png";
+import Prodash from "../Images/Projects/ProDash.png";
 const ProjectData = [
+  {
+    title: "Pro-Dash",
+    projectImg: Prodash,
+    type: "Mern",
+    link: "https://pro-dash.onrender.com/",
+    tech: "React",
+    date: "march 30 ",
+    tech1: "React,Redux",
+    tech2: "Tailwind,Chakara Ui",
+    tech3: "jwt,express",
+    tech4: "Node.js",
+    tech5: "MongoDB",
+  },
   {
     title: "E-SHOP",
     projectImg: Eshop,
