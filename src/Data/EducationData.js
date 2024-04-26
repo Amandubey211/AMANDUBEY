@@ -1,7 +1,7 @@
 import BSCITDegree from "../Images/Results/Sem-6.jpg";
 import HS_SCIENCE from "../Images/Results/12th hsc certificate.jpg";
 import PS_SCIENCE from "../Images/Results/10th ssc certificate.jpg";
-
+import SoftwareEngineeringCert from "../Images/Certificates/SoftwareEngineering.jpg";
 const EducationData = [
   {
     bgImage: "linear-gradient(to right, #0f0c29, #302b63, #24243e)",
@@ -18,6 +18,7 @@ const EducationData = [
     period: "21-22 (1 year)",
     title: "Software Engineering",
     subTitle: "grow skills academy",
+    source: SoftwareEngineeringCert,
     grade: "A+",
   },
   {

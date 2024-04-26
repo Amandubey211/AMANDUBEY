@@ -1,8 +1,6 @@
 import React from "react";
-import { BsDashLg } from "react-icons/bs";
 import { FcPhoneAndroid, FcGoogle } from "react-icons/fc";
-import { useEffect } from "react";
-import { toast } from "react-hot-toast";
+
 import Layout from "../components/Layout";
 import ProfileComponent from "../components/ProfileComponent";
 import ContactForm from "../components/ContactForm";
@@ -66,10 +64,16 @@ const Contact = () => {
                   <hr />
 
                   <div className="d-flex flex-row  gap-1 justify-content-center ">
-                    <span className="fw-semibold "> amandubey8833@gmail.com</span>
+                    <span className="fw-semibold ">
+                      {" "}
+                      amandubey8833@gmail.com
+                    </span>
                   </div>
                   <div className="d-flex flex-row  gap-1 justify-content-center ">
-                    <span className="fw-semibold "> amanheller8833@gmail.com</span>
+                    <span className="fw-semibold ">
+                      {" "}
+                      amanheller8833@gmail.com
+                    </span>
                   </div>
                 </div>
               </div>

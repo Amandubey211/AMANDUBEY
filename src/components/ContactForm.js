@@ -1,46 +1,23 @@
 import React from "react";
 import "./component-Styles/ContactForm.css";
-import { toast } from "react-hot-toast";
 import { FcInvite } from "react-icons/fc";
-
 import { useState } from "react";
-import axios from "axios";
+import useSubmitForm from "../Hooks/useSubmitForm.js";
 
 const ContactForm = () => {
   // when i was making this website i did'nt know about the clean code ,solid principles ,code modularity but at this time a know and i have refactored my code as much a can , i can also make a custom hook for this contact form function but i am goona leave this just like this
   const [Name, Setname] = useState("");
   const [Email, Setemail] = useState("");
   const [Message, Setmessage] = useState("");
-  const [loading, SetLoading] = useState(false);
+  const { loading, submitForm } = useSubmitForm();
 
-  const submitForm = async (e) => {
+  const SubmitForm = (e) => {
     e.preventDefault();
-    try {
-      SetLoading(true);
-      const { data } = await axios.post(
-        "https://amandubey-backend.onrender.com/api/contact",
-        {
-          Name,
-          Email,
-          Message,
-        }
-      );
-      if (data) {
-        toast.success(data.message);
-        SetLoading(false);
-        Setemail("");
-        Setname("");
-        Setmessage("");
-      } else {
-        toast.error(data.message);
-        SetLoading(false);
-      }
-    } catch (error) {
-      SetLoading(false);
-      toast.error("something went wrong");
-    }
+    submitForm(Email, Name, Message);
+    Setemail("");
+    Setname("");
+    Setmessage("");
   };
-
   return (
     <div>
       <div className="row">
@@ -51,7 +28,7 @@ const ContactForm = () => {
               boxShadow:
                 "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
             }}
-            onSubmit={submitForm}
+            onSubmit={SubmitForm}
           >
             <div
               className="mt-2  fw-semibold text-capitalize text-center d-flex  py-2 flex-row flex-wrap gap-2 justify-content-center  align-items-center rounded-2 bg-none "

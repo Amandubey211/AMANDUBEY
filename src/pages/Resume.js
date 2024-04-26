@@ -1,9 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { BsDashLg } from "react-icons/bs";
 
 import "./Styles/Resume.css";
-import { FcLandscape } from "react-icons/fc";
 import ProfileComponent from "../components/ProfileComponent";
 import EductionComponent from "../components/EductionComponent";
 import Knowledge from "../components/Knowledge";

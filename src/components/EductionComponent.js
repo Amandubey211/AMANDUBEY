@@ -7,6 +7,8 @@ import { toast } from "react-hot-toast";
 import EducationData from "../Data/EducationData";
 import EducationDataBar from "./EducationDataBar";
 import CertificatesData from "../Data/Certificates";
+import InternShip from "../Images/Certificates/InterShipLetter.jpg";
+import MCASem1 from "../Images/Results/MCA-Sem-1.png";
 const EductionComponent = () => {
   return (
     <div>
@@ -31,6 +33,7 @@ const EductionComponent = () => {
                 title=" MCA"
                 subTitle="JAIN-University"
                 grade="-"
+                source={MCASem1}
               />
             </div>
             <div className="  row ">
@@ -139,10 +142,11 @@ const EductionComponent = () => {
                 }}
               >
                 <EEresume
-                  period="Aug-23 (2 smonths)"
-                  title=" Microsoft Intern-Ship"
-                  subTitle="microsoft"
-                  grade="A"
+                  period="Oct 2023-Apr 2024"
+                  title="Web Developer"
+                  subTitle="Acuity Educare Pvt.Ltd"
+                  grade="A+"
+                  source={InternShip}
                 />
               </div>
             </div>

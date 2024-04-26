@@ -55,7 +55,7 @@ const Footer = () => {
                     </button>
                   </form>
                 </div>
-                <div className="d-flex flex-row align-items-center justify-content-start mt-1   ps-lg-5 fs-2 gap-2">
+                <div className="d-flex flex-row align-items-center justify-content-start mt-1   ps-lg-5 fs-3 gap-3">
                   <div>
                     <BsLinkedin />
                   </div>
