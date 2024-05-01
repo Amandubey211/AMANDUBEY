@@ -1,62 +1,61 @@
 const KnowledgeData = [
-  "SECURITY",
-
+  "Front-End Development",
+  "Web Security",
   "SEO",
-
-  "Authintacation",
-
-  "Authorization",
-
-  "BUNDLERS",
-
-  "Github",
-
+  "Authentication",
+  "Bundlers",
+  "GitHub",
   "Hosting",
-
-  "LAZY-LOADING",
-
-  "FIRE-BASE",
-
-  "DEPLOYMENT",
-
+  "Lazy Loading",
+  "Firebase",
+  "SOLID Principles",
+  "Code Modularity",
   "DOM",
-
-  "Rest API",
-
-  "Server-Less APIs",
-
-  "HOOKS",
-
-  "REDUX",
-
-  "UI-LAYER /DATA-LAYER",
-
-  "AI",
-  "PARCEL",
-
-  "TESTING",
-
-  "CORE-UNDERSTANDING",
-
-  "SYSTEM-DESIGN AND PLANNING",
-
-  "BEST-APPROACH",
-
-  "CODE-SPLITTING/MODULARITY",
-
-  "ASYNC OPERATIONS",
-
-  "GIT",
-
-  "LLD/HLD",
-
-  "CHAKRA-UI",
-
-  "ANT-DESIGN",
-
-  "STYLED-COMPONENTS",
-
-  "MANY MORE..",
+  "REST API",
+  "Hooks",
+  "Redux",
+  "JWT",
+  "Cloudinary",
+  "Asset Optimization",
+  "JS Optimization",
+  "Web Performance",
+  "Accessibility",
+  "Low-Level Design",
+  "High-Level",
+  "UI Layer / Data Layer",
+  "React Jest",
+  "Render",
+  "Netlify",
+  "DSA",
+  "GraphQL",
+  "SSE",
+  "Web Sockets",
+  "Computer Networks",
+  "Web Storage",
+  "Networking",
+  "Unit Testing",
+  "End-to-End",
+  "Integration",
+  "A/B",
+  "Test-Driven-Development",
+  "Core Understanding",
+  "System Design and Planning",
+  "Best Approach",
+  "Code Splitting",
+  "Async Operations",
+  "Git",
+  "Chakra UI",
+  "Ant Design",
+  "Styled Components",
+  "Microservices Architecture",
+  "Responsive",
+  "Version Control Systems",
+  "Agile Methodologies",
+  "Scalability",
+  "Performance",
+  "UI/UX Design Principles",
+  "Data Structures and Algorithms",
+  "Data Visualization",
 ];
 
 export default KnowledgeData;

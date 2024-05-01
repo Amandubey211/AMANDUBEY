@@ -8,6 +8,9 @@ import { BsCodeSlash, BsDashLg } from "react-icons/bs";
 import { IoLogoNodejs } from "react-icons/io5";
 import { ClientsImage, Objective } from "../Data/Constants";
 import WhatIDoComponent from "../components/WhatIDo";
+import "./Styles/Home.css";
+import { SkillsLogo } from "../Data/SkillsLogo";
+import { Tooltip } from "@chakra-ui/react";
 
 const Home = () => {
   return (
@@ -134,25 +137,40 @@ const Home = () => {
             <hr />
             <div>
               <div className="d-flex justify-content-center align-items-center">
-                <h4 className="text-center d-flex gap-1 align-items-center">
+                <h4 className="text-center d-flex gap-1  align-items-center">
                   {" "}
-                  <BsDashLg /> Daily clients <BsDashLg />
+                  <BsDashLg />
+                  Primary Skills <BsDashLg />
                 </h4>
               </div>
+              <div className="logos d-flex flex-nowrap  my-2">
+                <div className="d-flex flex-row    client-logo-slides  gap-5 p-2  ">
+                  {SkillsLogo.sort((a, b) => a.id - b.id).map((data, index) => {
+                    return (
+                      <Tooltip label={data.label}>
+                        <img
+                          key={data.id + index}
+                          className="clients_img  "
+                          src={data.logo}
+                          alt={`client${index + 1}`}
+                        />
+                      </Tooltip>
+                    );
+                  })}
 
-              <div className="d-flex flex-row flex-wrap  justify-content-evenly gap-2 p-2  ">
-                {ClientsImage.map((data, index) => {
-                  return (
-                    <div key={index}>
-                      <img
-                        className="clients_img"
-                        src={data}
-                        style={{ width: "80px" }}
-                        alt={`client${index + 1}`}
-                      />
-                    </div>
-                  );
-                })}
+                  {SkillsLogo.map((data, index) => {
+                    return (
+                      <Tooltip label={data.label}>
+                        <img
+                          key={data.id}
+                          className="clients_img"
+                          src={data.logo}
+                          alt={`client${index + 1}`}
+                        />
+                      </Tooltip>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

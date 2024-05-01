@@ -1,14 +1,12 @@
-import { Progress } from "antd";
 import React from "react";
-import { BsDashLg } from "react-icons/bs";
 import { FcStatistics } from "react-icons/fc";
 import TeckStackData from "../Data/TeckStakData";
 import TeckStackBar from "./TeckStackBar";
 
 const TeckStack = () => {
   return (
-    <div>
-      <div className="d-flex flex-row gap-2 justify-content-center  ">
+    <>
+      <div className="d-flex flex-row gap-2 py-1 justify-content-center   ">
         <span>
           <FcStatistics className="fs-4 " />
         </span>{" "}
@@ -25,7 +23,7 @@ const TeckStack = () => {
           return <TeckStackBar key={data.title} data={data} />;
         })}
       </div>
-    </div>
+    </>
   );
 };
 

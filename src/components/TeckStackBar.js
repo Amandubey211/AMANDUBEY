@@ -4,12 +4,12 @@ import React from "react";
 const TeckStackBar = ({ data }) => {
   const { percent, color, title } = data;
   return (
-    <div className="row py-1">
+    <div className="row py-1 ">
       <div className="col-5">
         <div className="d-flex ">
           <span
-            className="fw-semibold text-uppercase"
-            style={{ fontSize: "12px" }}
+            className="fw-semibold small  text-capitalize "
+            // style={{ fontSize: "12px" }}
           >
             {title}
           </span>

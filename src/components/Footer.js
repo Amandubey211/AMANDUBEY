@@ -4,8 +4,6 @@ import { toast } from "react-hot-toast";
 import { useState } from "react";
 import { BsDashLg } from "react-icons/bs";
 import { FcCopyright } from "react-icons/fc";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGooglePlusSquare, FaGithubSquare } from "react-icons/fa";
 import { ClientsImage } from "../Data/Constants";
 
 const Footer = () => {
@@ -31,7 +29,12 @@ const Footer = () => {
                     onSubmit={(e) => {
                       e.preventDefault();
 
-                      toast.success(`thanks for your intrest  "${subname}.." `);
+                      toast.success(
+                        `thanks for your intrest  "${subname}.." `,
+                        {
+                          position: "bottom-left",
+                        }
+                      );
                       Setuseremail("");
                     }}
                     className="d-flex justify-content-start gap-2 align-items-center"
@@ -55,19 +58,8 @@ const Footer = () => {
                     </button>
                   </form>
                 </div>
-                <div className="d-flex flex-row align-items-center justify-content-start mt-1   ps-lg-5 fs-3 gap-3">
-                  <div>
-                    <BsLinkedin />
-                  </div>
-                  <div>
-                    <FaGooglePlusSquare />
-                  </div>
-                  <div>
-                    <FaGithubSquare />
-                  </div>
-                </div>
-                <hr />
-                <p className=" ps-lg-5 " style={{ fontSize: "12px" }}>
+
+                <p className=" ps-lg-5 pt-3 small">
                   May your life be full of happiness, success, and love. Sending
                   my best wishes to you! All the best for all your future
                   endeavors

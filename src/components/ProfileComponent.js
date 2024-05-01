@@ -9,6 +9,7 @@ import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
 import { ImFolderDownload } from "react-icons/im";
 import { SiReplit } from "react-icons/si";
 import MyLinks from "../Data/MyLinks";
+import { Tooltip } from "@chakra-ui/react";
 const ProfileComponent = ({ HOME }) => {
   return (
     <div>
@@ -42,15 +43,17 @@ const ProfileComponent = ({ HOME }) => {
               {" "}
               {MyLinks.map((data) => {
                 return (
-                  <Link
-                    title={data.role}
-                    key={data.id}
-                    target="_blank"
-                    className="text-decoration-none text-reset"
-                    to={data.url}
-                  >
-                    {data.logo}
-                  </Link>
+                  <Tooltip label={data.role}>
+                    <Link
+                      title={data.role}
+                      key={data.id}
+                      target="_blank"
+                      className="text-decoration-none text-reset"
+                      to={data.url}
+                    >
+                      {data.logo}
+                    </Link>
+                  </Tooltip>
                 );
               })}
             </div>
@@ -104,7 +107,7 @@ const ProfileComponent = ({ HOME }) => {
                   />{" "}
                 </span>
                 <span className="fw-bold" style={{ fontSize: "12px" }}>
-                  vasi-virar India
+                  Mumbai (IN)
                 </span>
               </div>
               <div className="hoverButton rounded-2 py-3 px-4  justify-content-between  align-items-center   d-flex flex-row gap-2">
@@ -141,8 +144,12 @@ const ProfileComponent = ({ HOME }) => {
               href={CV}
               onClick={() =>
                 CV
-                  ? toast.success("downloading file please wait...")
-                  : toast.error("file not present")
+                  ? toast.success("downloading file please wait...", {
+                      position: "bottom-left",
+                    })
+                  : toast.error("file not present", {
+                      position: "bottom-left",
+                    })
               }
               download
               className="pt-2 text-reset"

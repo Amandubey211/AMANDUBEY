@@ -18,7 +18,7 @@ const ProjectData = [
     type: "Mern",
     link: "https://pro-dash.onrender.com/",
     tech: "React",
-    date: "march 30 ",
+    date: "April 3 ",
     tech1: "React,Redux",
     tech2: "Tailwind,Chakara Ui",
     tech3: "jwt,express",

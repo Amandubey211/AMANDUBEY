@@ -3,6 +3,7 @@ import "./component-Styles/ContactForm.css";
 import { FcInvite } from "react-icons/fc";
 import { useState } from "react";
 import useSubmitForm from "../Hooks/useSubmitForm.js";
+import { Button, Stack } from "@chakra-ui/react";
 
 const ContactForm = () => {
   // when i was making this website i did'nt know about the clean code ,solid principles ,code modularity but at this time a know and i have refactored my code as much a can , i can also make a custom hook for this contact form function but i am goona leave this just like this
@@ -13,7 +14,7 @@ const ContactForm = () => {
 
   const SubmitForm = (e) => {
     e.preventDefault();
-    submitForm(Email, Name, Message);
+    submitForm(Name, Email, Message);
     Setemail("");
     Setname("");
     Setmessage("");
@@ -80,13 +81,17 @@ const ContactForm = () => {
               <label>Message</label>
             </div>
             <div className="d-flex justify-content-start ">
-              <button
-                className="  ms-2  px-5  py-2  fw-bold  button-85"
-                type="submit"
-                style={{ fontSize: "12px" }}
-              >
-                {loading ? "loading" : "send"}
-              </button>
+              <Stack direction="row" spacing={4}>
+                <Button
+                  type="submit"
+                  isLoading={loading}
+                  loadingText="loading"
+                  colorScheme="teal"
+                  variant="outline"
+                >
+                  send
+                </Button>
+              </Stack>
             </div>
           </form>
         </div>

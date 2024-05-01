@@ -16,14 +16,20 @@ const useSubmitForm = () => {
           Message,
         }
       );
-      if (data) {
-        toast.success(data.message);
+      if (data.success) {
+        toast.success(data.message, {
+          position: "bottom-left",
+        });
       } else {
-        toast.error(data.message);
+        toast.error(data.message, {
+          position: "bottom-left",
+        });
       }
     } catch (error) {
-      toast.error("something went wrong");
-      console.log(error);
+      setLoading(false);
+      toast.error("Please Try Again", {
+        position: "bottom-left",
+      });
     } finally {
       setLoading(false);
     }

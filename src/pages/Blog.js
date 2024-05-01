@@ -12,7 +12,7 @@ const Blog = () => {
             <ProfileComponent />
           </div>
           <div
-            className=" ms-3  col-lg-8 col-md-8 col-sm-12 p-2 ps-3 rounded-3"
+            className="   col-lg-9 col-md-8 col-sm-12 p-2 ps-3 rounded-3"
             style={{
               boxShadow:
                 "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
@@ -20,11 +20,8 @@ const Blog = () => {
           >
             {" "}
             <div className="p-3 rounded-4  mb-1  d-flex flex-column flex-wrap gap-2   ">
-              <h4 style={{ fontWeight: "bolder" }}>#Thinker</h4>
-              <div>
-                {" "}
-                <h6>A Slight Touch Of my intrests .</h6>
-              </div>
+              <h4 style={{ fontWeight: "bolder" }}>Recent Achivements</h4>
+              <div> {/* <h6>A Slight Touch Of my intrests .</h6> */}</div>
             </div>
             <div className="d-flex flex-row flex-wrap gap-2  ">
               {BlogData.map((blog) => {

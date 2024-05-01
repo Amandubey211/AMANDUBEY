@@ -24,8 +24,12 @@ const EEresume = ({ period, title, subTitle, grade, source }) => {
                   href={source}
                   onClick={() =>
                     source
-                      ? toast.success("downloading file please wait...")
-                      : toast.error("file not present yet..")
+                      ? toast.success("downloading file please wait...", {
+                          position: "bottom-left",
+                        })
+                      : toast.error("file not present yet..", {
+                          position: "bottom-left",
+                        })
                   }
                   download
                 >

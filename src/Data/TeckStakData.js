@@ -5,28 +5,38 @@ const TeckStackData = [
     percent: 80,
   },
   {
-    title: "React",
+    title: "Javascript",
+    color: "green",
+    percent: 75,
+  },
+  {
+    title: "React.js",
     color: "green",
     percent: 85,
   },
   {
-    title: "REDUX",
+    title: "Redux.js",
     color: "green",
     percent: 70,
   },
 
   {
-    title: "BOOTSTRAP",
+    title: "Bootstrap",
     color: "green",
     percent: 75,
   },
   {
-    title: "Tailwind",
+    title: "TailwindCss",
     color: "green",
+    percent: 80,
+  },
+  {
+    title: " Chakra.UI",
+    color: "blue",
     percent: 70,
   },
   {
-    title: "Testing",
+    title: "Jest",
     color: "green",
     percent: 70,
   },
@@ -36,19 +46,34 @@ const TeckStackData = [
     percent: 60,
   },
   {
-    title: "NODE.JS",
+    title: "Node.js",
     color: "blue",
     percent: 60,
   },
   {
-    title: "mongoDb",
+    title: "MongoDB",
     color: "blue",
     percent: 60,
   },
   {
-    title: "GIT",
+    title: "Github",
     color: "blue",
     percent: 60,
+  },
+  {
+    title: "SEO",
+    color: "green",
+    percent: 70,
+  },
+  {
+    title: "Performance",
+    color: "green",
+    percent: 70,
+  },
+  {
+    title: "System Design",
+    color: "yellow",
+    percent: 50,
   },
 ];
 

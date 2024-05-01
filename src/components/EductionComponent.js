@@ -59,8 +59,12 @@ const EductionComponent = () => {
                         href={Cet}
                         onClick={(e) =>
                           Cet
-                            ? toast.success("downloading file please wait...")
-                            : toast.error("file not present")
+                            ? toast.success("downloading file please wait...", {
+                                position: "bottom-left",
+                              })
+                            : toast.error("file not present", {
+                                position: "bottom-left",
+                              })
                         }
                         download
                         className="pt-2 text-reset"
@@ -92,8 +96,12 @@ const EductionComponent = () => {
                         href={Nimcet}
                         onClick={() =>
                           Nimcet
-                            ? toast.success("downloading file please wait...")
-                            : toast.error("file not present")
+                            ? toast.success("downloading file please wait...", {
+                                position: "bottom-left",
+                              })
+                            : toast.error("file not present", {
+                                position: "bottom-left",
+                              })
                         }
                         download
                         className="pt-2 text-reset"
