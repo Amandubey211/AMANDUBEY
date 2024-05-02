@@ -1,6 +1,5 @@
 import React from "react";
 import { FcPhoneAndroid, FcGoogle } from "react-icons/fc";
-
 import Layout from "../components/Layout";
 import ProfileComponent from "../components/ProfileComponent";
 import ContactForm from "../components/ContactForm";

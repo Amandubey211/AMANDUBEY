@@ -29,7 +29,7 @@ const Work = () => {
           >
             <h5 className="fw-bold text-uppercase mb-2   ps-2">
               {" "}
-              WEB projects
+              WEB projects-({ProjectData.length})
             </h5>{" "}
             <div className="d-flex flex-row flex-wrap gap-4">
               {ProjectData.map((data) => {

@@ -5,17 +5,11 @@ const TeckStackBar = ({ data }) => {
   const { percent, color, title } = data;
   return (
     <div className="row py-1 ">
-      <div className="col-5">
-        <div className="d-flex ">
-          <span
-            className="fw-semibold small  text-capitalize "
-            // style={{ fontSize: "12px" }}
-          >
-            {title}
-          </span>
+      <div className="col-12">
+        <div className="d-flex pe-2 align-items-center justify-content-between  gap-1 ">
+          <span className="fw-semibold fs-6  text-capitalize ">{title}</span>
+          <img src={data?.logo} style={{ height: "25px" }} />
         </div>
-      </div>
-      <div className="col-7">
         <Progress value={percent} size="xs" colorScheme={color} />
       </div>
     </div>

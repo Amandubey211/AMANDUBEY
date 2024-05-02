@@ -10,7 +10,7 @@ const TeckStack = () => {
         <span>
           <FcStatistics className="fs-4 " />
         </span>{" "}
-        <h5> Working skills</h5>
+        <h5> Working skills </h5>
       </div>
       <div
         className="d-flex flex-column flex-wrap gap-1   px-3 py-2 rounded-3"

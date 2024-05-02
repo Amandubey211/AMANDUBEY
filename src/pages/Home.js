@@ -34,10 +34,8 @@ const Home = () => {
               <div className=" py-1 rounded-3 d-flex gap-2 align-items-center">
                 <h4> About Me</h4> <BsDashLg />
               </div>
-              <div className="ps-2">
-                <p className="fw-semibold" style={{ fontSize: "12px" }}>
-                  {Objective}
-                </p>
+              <div className="ps-2 ">
+                <p className="fw-semibold text-capitalize  fs-6">{Objective}</p>
               </div>
             </div>
             <div className="what_i_do  px-2     ">
@@ -145,7 +143,7 @@ const Home = () => {
               </div>
               <div className="logos d-flex flex-nowrap  my-2">
                 <div className="d-flex flex-row    client-logo-slides  gap-5 p-2  ">
-                  {SkillsLogo.sort((a, b) => a.id - b.id).map((data, index) => {
+                  {SkillsLogo.map((data, index) => {
                     return (
                       <Tooltip label={data.label}>
                         <img

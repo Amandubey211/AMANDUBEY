@@ -20,67 +20,56 @@ export const SkillsLogo = [
   {
     id: 2,
     label: "Redux",
-
     logo: ReduxLogo,
   },
   {
     id: 3,
     label: "Tailwind-Css",
-
     logo: TailwindCssLogo,
   },
   {
     id: 4,
     label: "Github",
-
     logo: GithubLogo,
   },
   {
     id: 5,
     label: "React-Router-Dom",
-
     logo: ReactRouterLogo,
   },
   {
     id: 6,
     label: "Javascript",
-
     logo: JavascriptLogo,
   },
   {
     id: 7,
     label: "Ant Design",
-
     logo: Ant,
   },
   {
     id: 10,
     label: "MongoDB",
-
     logo: MongoDBLogo,
   },
   {
     id: 8,
     label: "NodeJs",
-
     logo: NodeJsLogo,
   },
   {
     id: 12,
     label: "SEO",
-
     logo: SEOLogo,
   },
   {
     id: 11,
     label: "Jest",
-
     logo: JestLogo,
   },
   {
     id: 9,
     label: "Express",
-
     logo: Express,
   },
-];
+].sort((a, b) => a.id - b.id);

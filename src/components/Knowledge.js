@@ -14,7 +14,7 @@ const Knowledge = () => {
           return (
             <span
               key={data}
-              className="bg-secondary small  hoverlink rounded-1 p-1"
+              className="small bg-secondary   hoverlink rounded-1 p-1"
             >
               {data}
             </span>

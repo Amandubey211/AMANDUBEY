@@ -26,58 +26,48 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
           <div className="d-flex justify-content-end mb-3">
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto ">
-                <Nav.Link>
-                  <NavLink
-                    className="text-decoration-none text-reset py-2"
-                    to="/"
-                  >
-                    <span className="fs-6  fw-bold Navigation  px-3 py-2">
-                      Home
-                    </span>
-                  </NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink
-                    className="text-decoration-none text-reset py-2"
-                    to="/resume"
-                  >
-                    <span className="fs-6 Navigation   fw-bold px-3 py-2 ">
-                      Resume
-                    </span>
-                  </NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink
-                    className="text-decoration-none text-reset  py-2"
-                    to="/works"
-                  >
-                    <span className="fs-6  fw-bold Navigation px-3 py-2 ">
-                      works
-                    </span>
-                  </NavLink>
-                </Nav.Link>
+              <Nav className="me-auto gap-2 ">
+                <NavLink
+                  className="text-decoration-none text-reset py-2"
+                  to="/"
+                >
+                  <span className="fs-6  fw-bold Navigation  px-3 py-2">
+                    Home
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="text-decoration-none text-reset py-2"
+                  to="/resume"
+                >
+                  <span className="fs-6 Navigation   fw-bold px-3 py-2 ">
+                    Resume
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="text-decoration-none text-reset  py-2"
+                  to="/works"
+                >
+                  <span className="fs-6  fw-bold Navigation px-3 py-2 ">
+                    Works
+                  </span>
+                </NavLink>
+                <NavLink
+                  className="text-decoration-none text-reset  py-2"
+                  to="/blog"
+                >
+                  <span className="fs-6  fw-bold Navigation px-3 py-2 ">
+                    Blog{" "}
+                  </span>
+                </NavLink>
 
-                <Nav.Link>
-                  <NavLink
-                    className="text-decoration-none text-reset  py-2"
-                    to="/blog"
-                  >
-                    <span className="fs-6  fw-bold Navigation px-3 py-2 ">
-                      Blog{" "}
-                    </span>
-                  </NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink
-                    className="text-decoration-none text-reset  py-2"
-                    to="/contact"
-                  >
-                    <span className="fs-6  fw-bold Navigation px-3 py-2  ">
-                      contact{" "}
-                    </span>
-                  </NavLink>
-                </Nav.Link>
+                <NavLink
+                  className="text-decoration-none text-reset  py-2"
+                  to="/contact"
+                >
+                  <span className="fs-6  fw-bold Navigation px-3 py-2  ">
+                    Contact{" "}
+                  </span>
+                </NavLink>
               </Nav>
             </Navbar.Collapse>
           </div>

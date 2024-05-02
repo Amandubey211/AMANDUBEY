@@ -1,12 +1,14 @@
 import React from "react";
 import "./component-Styles/ContactForm.css";
-import { FcInvite } from "react-icons/fc";
+import { FcApproval, FcInvite } from "react-icons/fc";
 import { useState } from "react";
 import useSubmitForm from "../Hooks/useSubmitForm.js";
-import { Button, Stack } from "@chakra-ui/react";
+import { Button, Spinner, Stack } from "@chakra-ui/react";
+import useGetServerStatus from "../Hooks/useServerStatus.js";
 
 const ContactForm = () => {
   // when i was making this website i did'nt know about the clean code ,solid principles ,code modularity but at this time a know and i have refactored my code as much a can , i can also make a custom hook for this contact form function but i am goona leave this just like this
+  const { serverRunning } = useGetServerStatus();
   const [Name, Setname] = useState("");
   const [Email, Setemail] = useState("");
   const [Message, Setmessage] = useState("");
@@ -80,7 +82,7 @@ const ContactForm = () => {
               <span></span>
               <label>Message</label>
             </div>
-            <div className="d-flex justify-content-start ">
+            <div className="d-flex px-2  align-items-center  justify-content-between ">
               <Stack direction="row" spacing={4}>
                 <Button
                   type="submit"
@@ -92,6 +94,17 @@ const ContactForm = () => {
                   send
                 </Button>
               </Stack>
+              <div className="">
+                {!serverRunning ? (
+                  <div className="d-flex  gap-2 fs-6 align-items-center ">
+                    <span>Server</span> <Spinner size="sm" />
+                  </div>
+                ) : (
+                  <div className="d-flex gap-1  fs-6 align-items-center ">
+                    <span>Server</span> <FcApproval className="fs-4" />
+                  </div>
+                )}
+              </div>
             </div>
           </form>
         </div>

@@ -32,7 +32,7 @@ const EductionComponent = () => {
                 period="23-present (2 year)"
                 title=" MCA"
                 subTitle="JAIN-University"
-                grade="-"
+                grade="9.4 GPA"
                 source={MCASem1}
               />
             </div>
