@@ -6,7 +6,7 @@ import client6 from "../Images/Clients/logo6.png";
 import { BsCodeSlash } from "react-icons/bs";
 
 export const Objective =
-  "Bringing 1 year of expertise to Front-End Development, I specialize in React and the MERN Stack. My focus on advanced React concepts, performance optimization, and security ensures robust solutions. With a steadfast commitment to code quality and scalability, I guide projects seamlessly from inception to successful deployment.";
+  "With 1 year of front-end development experience in React and the MERN stack, I excel in advanced React concepts, performance optimization, and security. At Student Diwan, Qatar, I boosted productivity by 25% through workflow optimization. At Acuity Educare Ltd, Mulund, I led 10 React projects and 5 MERN apps, mastering front-end technologies and rigorous testing. My dedication to code quality ensures seamless project execution and successful deployments.";
 
 export const ClientsImage = [client1, client2, client5, client6];
 

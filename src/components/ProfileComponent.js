@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import owner from "../Images/Aman Dubey.jpg";
+import React from "react";
+import owner from "../Images/Aman Dubey.png";
 import { toast } from "react-hot-toast";
 import "./component-Styles/Profilecomponent.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CV from "../Images/Results/CV.pdf";
 import { FcPhoneAndroid, FcGoogle, FcGlobe, FcCalendar } from "react-icons/fc";
-import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
+
 import { ImFolderDownload } from "react-icons/im";
-import { SiReplit } from "react-icons/si";
+
 import MyLinks from "../Data/MyLinks";
 import { Tooltip } from "@chakra-ui/react";
 const ProfileComponent = ({ HOME }) => {
@@ -21,11 +21,8 @@ const ProfileComponent = ({ HOME }) => {
           <div className="profile_img pb-2 d-flex  justify-content-center flex-center ">
             <img
               loading="eager"
-              className="Image rounded-4"
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
-              }}
+              className="Image "
+           
               src={owner}
               alt="Aman Dubey Img"
             />

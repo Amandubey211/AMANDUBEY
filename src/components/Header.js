@@ -37,10 +37,10 @@ function Header() {
                 </NavLink>
                 <NavLink
                   className="text-decoration-none text-reset py-2"
-                  to="/resume"
+                  to="/career"
                 >
                   <span className="fs-6 Navigation   fw-bold px-3 py-2 ">
-                    Resume
+                  Career
                   </span>
                 </NavLink>
                 <NavLink
@@ -48,7 +48,7 @@ function Header() {
                   to="/works"
                 >
                   <span className="fs-6  fw-bold Navigation px-3 py-2 ">
-                    Works
+                  Projects
                   </span>
                 </NavLink>
                 <NavLink

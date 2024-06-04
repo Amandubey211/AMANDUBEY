@@ -120,6 +120,47 @@ const EductionComponent = () => {
           </div>
         </div>
         <div className="col-12 col-lg-6 col-xl-6 ">
+        <div>
+            <div className="d-flex flex-row flex-wrap gap-2 ps-2">
+              <div className="d-flex flex-row gap-2 pt-3">
+                <FcBriefcase className="fs-4" />
+                <h5> Experience</h5>
+              </div>
+            </div>
+            <div className="d-flex flex-column flex-wrap gap-2  ">
+            <div
+                className="rounded-3 pt-2"
+                style={{
+                  backgroundImage: " linear-gradient(to right, #ff512f, #f09819)",
+                  color: "black",
+                }}
+              >
+                <EEresume
+                  period="May 2024- present"
+                  title="Full Stack Developer"
+                  subTitle="Student Diwan,Qatar"
+                  grade="A+"
+                  source={InternShip}
+                />
+              </div>
+              <div
+                className="rounded-3 pt-2"
+                style={{
+                  backgroundImage: " linear-gradient(to right, #ff512f, #f09819)",
+                  color: "black",
+                }}
+              >
+                <EEresume
+                  period="Oct 2023-Apr 2024"
+                  title="Web Developer"
+                  subTitle="Acuity Educare Pvt.Ltd"
+                  grade="A+"
+                  source={InternShip}
+                />
+              </div>
+             
+            </div>
+          </div>
           <div>
             <div className="d-flex flex-row flex-wrap gap-2 ps-2">
               <div className="d-flex flex-row py-2 gap-2">
@@ -133,32 +174,7 @@ const EductionComponent = () => {
               })}
             </div>
           </div>
-          <div>
-            <div className="d-flex flex-row flex-wrap gap-2 ps-2">
-              <div className="d-flex flex-row gap-2 py-3">
-                <FcBriefcase className="fs-4" />
-                <h5> Experience</h5>
-              </div>
-            </div>
-            <div className="d-flex flex-column flex-wrap gap-2 ">
-              <div
-                className="rounded-3"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right, #434343 0%, black 100%)",
-                  color: "whitesmoke",
-                }}
-              >
-                <EEresume
-                  period="Oct 2023-Apr 2024"
-                  title="Web Developer"
-                  subTitle="Acuity Educare Pvt.Ltd"
-                  grade="A+"
-                  source={InternShip}
-                />
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
